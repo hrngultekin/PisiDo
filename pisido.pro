@@ -38,11 +38,13 @@ INSTALLS += bin_target
 translation_target.path = $$PISIDO_FILES_ROOT
 translation_target.files += translations/pisido_tr_TR.qm
 translation_target.files += translations/pisido_en_US.qm
+translation_target.files += translations/pisido_de_DE.qm
 INSTALLS += translation_target
 
 help_target.path = $$PISIDO_DOC_ROOT
 help_target.files += help/help_tr_TR.pdf
 help_target.files += help/help_en_US.pdf
+help_target.files += help/help_de_DE.pdf
 INSTALLS += help_target
 
 pixmap_target.path = $$PIXMAP_ROOT
@@ -140,7 +142,8 @@ FORMS += \
 
 TRANSLATIONS += \
     translations/pisido_en_US.ts \
-    translations/pisido_tr_TR.ts
+    translations/pisido_tr_TR.ts \
+    translations/pisido_de_DE.ts
 
 OTHER_FILES += \
     README \
@@ -153,6 +156,8 @@ OTHER_FILES += \
     help/help_tr_TR.odt \
     help/help_en_US.pdf \
     help/help_en_US.odt \
+    help/help_de_DE.pdf \
+    help/help_de_DE.odt \
     resources/files/actions_template_auto.py \
     resources/files/actions_template_cmake.py \
     resources/files/actions_template_java.py \
